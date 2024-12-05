@@ -151,7 +151,7 @@ small {
 
 strong {
   font-size: 20px;
-  color: white;
+  color: black;
 }
 
 .welcometext p {
@@ -247,18 +247,25 @@ p {
   padding-top: 20px;
 }
 
-.button {
-  width: 150px;
-  display: 50px;
+.button-readmore {
+  position: absolute;
+  top: 84%;
+  left: 25%;
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 15px 20px;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
+  transition: 0.3s;
+  width: 50%;
+  cursor: pointer;
 }
 
-button:hover {
-  box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.15);
-  opacity: 2;
-  right: 0;
-  padding-right: 20px;
+.button-readmore:hover {
+  background-color: #0d734e;
+  color: white;
+  width: 50%;
 }
 
 .bg-1 {
@@ -333,7 +340,7 @@ a:hover {
   width: 800px;
   height: 380px;
   border-radius: 10px;
-  transform: translate(0, 30%);
+  transform: translate(0, 40%);
   font-size: 20px;
   margin-right: 40px;
 }
@@ -381,7 +388,6 @@ a:hover {
   width: 100%;
   height: 300px;
   display: flex;
-  position: absolute;
 }
 .owl-carousel {
   background-color: #0d734e;
@@ -391,20 +397,157 @@ a:hover {
   background-color: chartreuse;
   width: 50%;
 }
-.owl-itemcloned {
-  border: 2px solid red;
-  height: 300px;
-  width: 20%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  position: absolute;
-}
+/* -----------owl-itemcloned---------- */
 
 /* ----------product_fu------------ */
 .product_fu {
   background-color: #ebefde;
   width: 100%;
-  height: 900px;
+  height: 1000px;
+  position: relative;
+}
+
+.sl_product {
+  width: 40%;
+  height: 500px;
+  position: absolute;
+  top: -20%;
+  left: calc(50% - 20%);
+}
+/* ---------ou_product --------- */
+.ou_product {
+  background-color: white;
+  width: 70%;
+  height: 600px;
+}
+
+.ou_product img {
+  position: absolute;
+  top: -24%;
+  left: 9%;
+}
+
+.ou_product img:hover {
+  top: -30%;
+}
+.ou_product .lagdi-box {
+  position: absolute;
+  background-color: #0d734e;
+  top: 55%;
+  left: 16%;
+  font-size: 40px;
+  color: white;
+}
+.ou_product .Fungicides {
+  position: absolute;
+  top: 66%;
+  left: 15%;
+  font-size: 45px;
+}
+
+.ou_product p {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.ou_product .readmore {
+  position: absolute;
+  top: 100%;
+  left: 12%;
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  transition: 0.3s;
+  width: 25%;
+  cursor: pointer;
+}
+
+.readmore:hover {
+  background-color: #0d734e;
+  color: white;
+  width: 25%;
+}
+.readmore:hover .ou_product img {
+  top: -30%;
+}
+
+/* ----------cl_product------------- */
+.cl_product {
+  background-color: white;
+  width: 60%;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  border-left: 2px solid #00d084;
+}
+
+.cl_product img {
+  position: absolute;
+  top: -24%;
+  left: 9%;
+}
+
+.cl_product img:hover {
+  top: -30%;
+}
+.cl_product .padgham {
+  background-color: #0d734e;
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  font-size: 40px;
+  color: white;
+}
+
+.cl_product .Insecticides {
+  position: absolute;
+  top: 54%;
+  left: 28%;
+  font-size: 45px;
+}
+.cl_product p {
+  position: absolute;
+  top: 65%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.cl_product .readmore {
+  position: absolute;
+  top: 84%;
+  left: 26%;
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+  width: 50%;
+  cursor: pointer;
+}
+
+.cl_product .readmore:hover {
+  background-color: #0d734e;
+  color: white;
+  width: 50%;
+}
+
+/* --------------pro_facilities--------- */
+.facilities-m {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: black;
 }
 
 @keyframes fade {
